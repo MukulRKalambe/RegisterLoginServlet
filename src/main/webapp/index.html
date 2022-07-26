@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Register Page</title>
+
+<style>
+.container {
+	width: 20%;
+	border: 1px solid black;
+	margin: auto;
+	padding: 30px;
+}
+
+h1 {
+	text-align: center;
+	font-family: fantasy;
+}
+
+body {
+	background-image: url("img/pic2.jpg");
+	background-size: cover;
+}
+
+#button {
+	text-align: center;
+	padding: 20px;
+}
+
+button {
+	background-color: #87CEEB;
+}
+</style>
+</head>
+<body>
+	<div class="container">
+
+		<form action="Register" method="post">
+
+			<h1>Register</h1>
+
+
+			<table>
+
+				<tr>
+					<td>Name :</td>
+					<td><input type="text" name="name" placeholder="Enter here."></td>
+				</tr>
+
+				<tr>
+					<td>Email :</td>
+					<td><input type="email" name="email" placeholder="Enter here."></td>
+				</tr>
+
+				<tr>
+					<td>Password :</td>
+					<td><input type="password" name="pass"
+						placeholder="Enter here."></td>
+				</tr>
+
+
+
+				<tr>
+					<td>Gender:</td>
+					<td><input type="radio" name="gender" value="male">Male
+						<input type="radio" name="gender" value="female">Female</td>
+				</tr>
+
+				<tr>
+					<td>D.O.B</td>
+					<td><input type="date" id="birthday" name="birthday"></td>
+				</tr>
+
+				<tr>
+					<td>Address:</td>
+					<td><input type="text" name="address"
+						placeholder="Enter here."></td>
+				</tr>
+
+				<tr>
+					<td>Course:</td>
+					<td><select name="course">
+							<option value="java">Java</option>
+							<option value="python">Python</option>
+							<option value="c++">C++</option>
+							<option value="sql">SQL</option>
+							<option value="c-programming">C Programming</option>
+					</select></td>
+				</tr>
+
+				<tr>
+					<td align="right"><input type="checkbox" name="condition"
+						value="marked"></td>
+					<td>Agree terms and conditions.</td>
+				</tr>
+
+
+			</table>
+			<div id="button">
+				<button type="submit">Submit</button>
+				<button type="reset">Reset</button>
+			</div>
+
+
+
+
+
+
+		</form>
+	</div>
+</body>
+</html>
